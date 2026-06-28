@@ -27,7 +27,7 @@ export const currently = [
   },
   {
     sprite: 'apps',
-    text: 'a Software Developer Intern at',
+    text: 'was a Software Developer Intern from Dec 2025 - April 2026 at',
     link: { label: 'Novigo Solutions', href: 'https://www.novigosolutions.com' },
     tail: ', building PowerApps that clean & automate data.',
   },
