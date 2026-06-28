@@ -5,8 +5,8 @@
 
 :root {
   /* color */
-  --void: #313131;
-  --void-2: #29272a;
+  --void: #0d0a10;
+  --void-2: #0a070d;
   --crypt: #15101b;
   --crypt-2: #1d1526;
   --kuromi: #a855f7;
@@ -18,7 +18,6 @@
   --creeper: #5ac26a;
   --line: rgba(168, 85, 247, 0.20);
   --line-soft: rgba(168, 85, 247, 0.10);
-
   /* type */
   --font-display: 'Minecraft', 'Silkscreen', 'VT323', monospace;
   --font-body: 'VT323', 'Minecraft', monospace;
