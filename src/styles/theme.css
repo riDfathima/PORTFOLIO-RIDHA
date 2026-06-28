@@ -1,0 +1,130 @@
+/* ============================================================
+   Ridha — Pixel Portfolio :: theme tokens + base
+   palette: a "crypt-garden" — near-black with Kuromi purple/pink
+   ============================================================ */
+
+:root {
+  /* color */
+  --void: #313131;
+  --void-2: #29272a;
+  --crypt: #15101b;
+  --crypt-2: #1d1526;
+  --kuromi: #a855f7;
+  --kuromi-deep: #7c3aed;
+  --bow: #e879c5;
+  --bow-deep: #d4499f;
+  --bone: #ece6f0;
+  --ash: #948aa3;
+  --creeper: #5ac26a;
+  --line: rgba(168, 85, 247, 0.20);
+  --line-soft: rgba(168, 85, 247, 0.10);
+
+  /* type */
+  --font-display: 'Minecraft', 'Silkscreen', 'VT323', monospace;
+  --font-body: 'VT323', 'Minecraft', monospace;
+  --font-label: 'Silkscreen', monospace;
+
+  /* rhythm */
+  --maxw: 1040px;
+  --gutter: clamp(20px, 5vw, 64px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--void);
+  /* faint vignette so sprites read against the dark */
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(124, 58, 237, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 100% 100%, rgba(232, 121, 197, 0.06), transparent 55%);
+  background-attachment: fixed;
+  color: var(--bone);
+  /* headings */
+  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'VT323', monospace;
+  line-height: 1.45;
+  letter-spacing: 0.3px;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--bone);
+  text-decoration: none;
+}
+
+/* shared underline-on-hover used by inline links */
+.ink-link {
+  color: var(--bone);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 1px;
+  transition: color 0.15s steps(2), border-color 0.15s steps(2);
+}
+.ink-link:hover {
+  color: var(--bow);
+  border-bottom-color: var(--bow);
+}
+
+/* ---- layout shell ---- */
+.page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 var(--gutter) 120px;
+}
+
+.shell {
+  position: relative;
+  z-index: 2;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+/* ---- section scaffolding ---- */
+.block {
+  margin-top: clamp(48px, 7vw, 84px);
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.4vw, 30px);
+  color: var(--bone);
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+.eyebrow .tilde {
+  color: var(--kuromi);
+}
+
+.lead {
+  font-size: clamp(20px, 2.2vw, 27px);
+  color: var(--bone);
+  margin-bottom: 8px;
+}
+
+/* never let copy push the page wider than the screen */
+.lead,
+.hero__sub,
+.row__text,
+.proj__blurb {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.muted {
+  color: var(--ash);
+}
+
+@media (max-width: 640px) {
+  body { font-size: 20px; }
+}
