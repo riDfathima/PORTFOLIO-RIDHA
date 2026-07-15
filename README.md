@@ -1,7 +1,5 @@
 # ridha — pixel portfolio
-
-A single-page portfolio/resume for **Ridha Fathima** (B.E. Computer Science –
-Data Science). Dark **Kuromi** pixel-art theme, Minecraft-style font, hand-drawn
+Dark **Kuromi** pixel-art theme, Minecraft-style font, hand-drawn
 pixel sprites (Kuromi, cats, creeper-plants), built with **React + Vite**.
 
 ## Run it
