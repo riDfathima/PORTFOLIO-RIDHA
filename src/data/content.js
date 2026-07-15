@@ -13,7 +13,7 @@ export const profile = {
 }
 
 export const nav = [
-  { label: 'RESUME', href: 'https://drive.google.com/file/d/1othWXDOim3gtU6M3nIOOdPATztspM2ri/view?usp=share_link', placeholder: false },
+  { label: 'RESUME', href: 'https://drive.google.com/file/d/1lgzG5nWXh5aaU6fHK6joMf_yzpcKKEQz/view?usp=share_link', placeholder: false },
   { label: 'LINKEDIN', href: 'https://www.linkedin.com/in/ridha-fathima-7086142a1/', placeholder: false },
   { label: 'GITHUB', href: 'https://github.com/riDfathima', placeholder: false },
 ]
